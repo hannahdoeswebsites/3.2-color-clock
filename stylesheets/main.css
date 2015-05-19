@@ -1,0 +1,45 @@
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+   }
+
+
+
+
+
+#body{
+  background-color: #b66ed4;
+transition:  opacity 0.5s ease-in 10s;
+  min-height: 100%;
+  max-width: 100%;
+  transition: background-color linear 7s;
+
+
+}
+
+#clock {
+    height: 100px;
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 70px;
+    font-family: courier, monospace;
+    text-align: center;
+    color: white;
+    font-size: 120px;
+
+
+}
+
+ #line {
+  background-color: white;
+  height: 2px;
+  position: absolute;
+  max-width: 80%;
+  min-width: 0;
+  top: 470px; left: 0; bottom: 0; right: 0;
+  margin: 0 auto;
+
+ }
