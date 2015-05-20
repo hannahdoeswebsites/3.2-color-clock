@@ -30,15 +30,6 @@ minutes = "0" + minutes;
   // This runs the displayTime function the first time
   displayTime();
 
-	// This makes our clock 'tick' by repeatedly
-	// running the displayTime function every second.
-	setInterval(displayTime, 1000);
-
-function changeBackground() {
-	document.getElementById("body").style.backgroundColor = "lightblue";
-}
-setInterval(changeBackground, 1000);
-
 
 function setWidth() {
 	var line = document.getElementById("line");
@@ -49,3 +40,17 @@ var linePercent = lineWidth + "%";
 
 line.style.width = linePercent;
 }
+
+function hexTime(timer){
+       var initialOuterHex = "b66ed4";
+       var initialInnerHex = "00ffe7";
+       //change hex to number
+       var number = parseInt(initialOuterHex,16 ) + timer  * 15;
+       var numberOuter = parseInt(initialInnerHex,16)  - timer * 15;
+       var backgroundColor = document.getElementById("body");
+       element.style.backgroundimage = "-webkit-gradient(radial, 50% 50%, 40, 50% 50%,1200, from(#" + number.toString(16) + "), to(#" + numberOuter.toString(16) + "))";
+}
+
+// This makes our clock 'tick' by repeatedly
+// running the displayTime function every second.
+setInterval(displayTime, 1000);

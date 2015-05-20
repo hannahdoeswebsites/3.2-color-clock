@@ -9,11 +9,10 @@ html, body {
 
 
 #body{
-  background-color: #b66ed4;
-transition:  opacity 0.5s ease-in 10s;
+  background-image: radial-gradient(circle,#000000 0%, rgba(38, 38, 38, 0) 50%);
   min-height: 100%;
   max-width: 100%;
-  transition: background-color linear 7s;
+
 
 
 }
